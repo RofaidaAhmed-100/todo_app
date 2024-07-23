@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:to_do/home/home_screen.dart';
 
 void main(){
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
      initialRoute:HomeScreen.routeName ,
       routes: {
-        HomeScreen.routeName:(context)=>HomeScreen(),
+        HomeScreen.routeName:(context)=>const HomeScreen(),
       },
     );
   }
